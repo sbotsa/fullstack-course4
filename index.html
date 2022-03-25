@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>
+Web App – Simple Interest Calculator
+</title>
+<script src="calscript.js"> </script>
+
+</head>
+<body>
+<table  border="1" align="center" width="40%">
+<tr>
+<th> Amount:</th>
+<td> <input type="text" name="pri" id="pri" onblur="check()" value="0"> </td>
+</tr>
+<tr>
+<th> Rate :</th>
+<td>
+<input type="range" name="rate" id="rate" max="20" onclick="getval()">
+<label id="r"> </lable>
+</td>
+</tr>
+<tr>
+<th> NO.Of Years </th>
+<td>
+<select name="years" id="years">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option> 
+</select>
+</td>
+</tr>
+<tr>
+<th>
+Interest :</th>
+<td>
+<lable id="result" style="color:yellow"></label>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="button" value="Compute Interest" onclick="cal()">
+</td>
+</tr>
+</table>
+<p>
+&copy; Everyone Can Get Rich
+</p>
+</body>
+</html>
